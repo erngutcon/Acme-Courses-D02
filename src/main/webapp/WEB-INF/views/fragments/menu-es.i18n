@@ -88,5 +88,5 @@ master.menu.any.configuration = ConfiguraciÃ³n
 # master.menu.authenticated ####################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.bulletin = Boletines
+master.menu.authenticated.post = Publicaciones
 master.menu.authenticated.configuration = ConfiguraciÃ³n
