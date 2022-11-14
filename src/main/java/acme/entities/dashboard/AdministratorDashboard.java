@@ -12,54 +12,54 @@ public class AdministratorDashboard implements Serializable {
 
 	private static final long	serialVersionUID	= 1L;
 
-	Integer						totalNumberOfIngredients;
+	Integer						totalNumberOfTheoryTutorials;
 
-	List<Object>						averageRetailPriceOfIngredients;
+	List<Object>						averageCostOfTheoryTutorials;
 
-	List<Object>						deviationRetailPriceOfIngredients;
+	List<Object>						deviationCostOfTheoryTutorials;
 
-	List<Object>						minimumRetailPriceOfIngredients;
+	List<Object>						minimumCostOfTheoryTutorials;
 
-	List<Object>						maximumRetailPriceOfIngredients;
+	List<Object>						maximumCostOfTheoryTutorials;
 
-	Integer						totalNumberOfKitchenUtensils;
+	Integer						totalNumberOfLabTutorials;
 
-	List<Object>						averageRetailPriceOfKitchenUtensils;
+	List<Object>						averageCostOfLabTutorials;
 
-	List<Object>						deviationRetailPriceOfKitchenUtensils;
+	List<Object>						deviationCostOfLabTutorials;
 
-	List<Object>						minimumRetailPriceOfKitchenUtensils;
+	List<Object>						minimumCostOfLabTutorials;
 
-	List<Object>						maximumRetailPriceOfKitchenUtensils;
+	List<Object>						maximumCostOfLabTutorials;
 
-	Integer						totalNumberOfProposedFineDishes;
+	Integer						totalNumberOfProposedHelpRequests;
 
-	Integer						totalNumberOfAcceptedFineDishes;
+	Integer						totalNumberOfAcceptedHelpRequests;
 
-	Integer						totalNumberOfDeniedFineDishes;
+	Integer						totalNumberOfDeniedHelpRequests;
 
-	List<Object>						averageBudgetOfProposedFineDishes;
+	List<Object>						averageBudgetOfProposedHelpRequests;
 
-	List<Object>						deviationBudgetOfProposedFineDishes;
+	List<Object>						deviationBudgetOfProposedHelpRequests;
 
-	List<Object>						minimumBudgetOfProposedFineDishes;
+	List<Object>						minimumBudgetOfProposedHelpRequests;
 
-	List<Object>						maximumBudgetOfProposedFineDishes;
+	List<Object>						maximumBudgetOfProposedHelpRequests;
 
-	List<Object>						averageBudgetOfAcceptedFineDishes;
+	List<Object>						averageBudgetOfAcceptedHelpRequests;
 
-	List<Object>						deviationBudgetOfAcceptedFineDishes;
+	List<Object>						deviationBudgetOfAcceptedHelpRequests;
 
-	List<Object>						minimumBudgetOfAcceptedFineDishes;
+	List<Object>						minimumBudgetOfAcceptedHelpRequests;
 
-	List<Object>						maximumBudgetOfAcceptedFineDishes;
+	List<Object>						maximumBudgetOfAcceptedHelpRequests;
 
-	List<Object>						averageBudgetOfDeniedFineDishes;
+	List<Object>						averageBudgetOfDeniedHelpRequests;
 
-	List<Object>						deviationBudgetOfDeniedFineDishes;
+	List<Object>						deviationBudgetOfDeniedHelpRequests;
 
-	List<Object>						minimumBudgetOfDeniedFineDishes;
+	List<Object>						minimumBudgetOfDeniedHelpRequests;
 
-	List<Object>						maximumBudgetOfDeniedFineDishes;
+	List<Object>						maximumBudgetOfDeniedHelpRequests;
 
 }
