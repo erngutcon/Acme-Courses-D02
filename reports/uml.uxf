@@ -444,7 +444,7 @@ bg=yellow
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Blink
 --
-+ instatiationMoment: Date
++ instantiationMoment: Date
 + caption: String {NotBlank,Length(1,76)}
 + author: String {NotBlank,Length(1,76)}
 + message: String {NotBlank,Length(1,255)}
@@ -530,7 +530,7 @@ bg=green</panel_attributes>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 HelpRequest
 --
-+ instatiationMoment: Date {Past}
++ instantiationMoment: Date {Past}
 + status: StatusHelpRequest
 + ticker: String {NotBlank,Pattern="^[A-Z]{3}-[0-9]{3}(:[A-Z]{1,10})?$",Unique}
 + statement: String {NotBlank,Length(1,255)}
@@ -631,7 +631,7 @@ send v
 FollowUp
 --
 + /sequenceNumber: String{Unique}
-+ instatiationMoment: Date {Past}
++ instantiationMoment: Date {Past}
 + message: String {NotBlank, Length(1,255)}
 + hyperlink: String {Url} [0..1]
 bg=green</panel_attributes>
