@@ -31,7 +31,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Peep extends AbstractEntity {
+public class Blink extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -42,19 +42,19 @@ public class Peep extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
-	protected Date					creationMoment;
+	protected Date					instationMoment;
 	
 	@NotBlank
-	@Length(max = 100)
-	protected String				heading;
+	@Length(max = 75)
+	protected String				caption;
 
 	@NotBlank
-	@Length(max = 100)
-	protected String				writer;
+	@Length(max = 75)
+	protected String				authorAlias;
 
 	@NotBlank
 	@Length(max = 255)
-	protected String				pieceText;
+	protected String				message;
 
 	@Email
 	protected String				email;
