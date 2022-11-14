@@ -24,7 +24,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Memorandum extends AbstractEntity {
+public class FollowUp extends AbstractEntity {
 	
 	// Serialisation identifier -----------------------------------------------
 	
@@ -34,20 +34,20 @@ public class Memorandum extends AbstractEntity {
 	
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^([A-Z]{2}:)?[A-Z]{3}-[0-9]{3}\\:[0-9]{4}$")
+	@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(:[A-Z]{1,10})?\\:[0-9]{4}$")
 	protected String sequenceNumber;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
-	protected Date creationMoment;
+	protected Date instantiationMoment;
 	
 	@NotBlank
 	@Length(max = 255)
-	protected String report;
+	protected String message;
 	
 	@URL
-	protected String link;
+	protected String hyperlink;
 	
 	// Derived attributes -----------------------------------------------------
 	
@@ -56,5 +56,5 @@ public class Memorandum extends AbstractEntity {
 	@NotNull
 	@Valid
 	@ManyToOne(optional=false)
-	protected FineDish fineDish;
+	protected HelpRequest helpRequest;
 }

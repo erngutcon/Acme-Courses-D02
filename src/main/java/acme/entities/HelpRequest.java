@@ -17,8 +17,8 @@ import org.hibernate.validator.constraints.URL;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.AbstractEntity;
-import acme.roles.Chef;
-import acme.roles.Epicure;
+import acme.roles.Learner;
+import acme.roles.Teacher;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,7 +26,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class FineDish extends AbstractEntity {
+public class HelpRequest extends AbstractEntity {
 	
 	// Serialisation identifier -----------------------------------------------
 	
@@ -35,16 +35,16 @@ public class FineDish extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 	
 	@NotNull
-	protected StatusFineDish status;
+	protected StatusHelpRequest status;
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^([A-Z]{2}:)?[A-Z]{3}-[0-9]{3}$")
-	protected String code;
+	@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(:[A-Z]{1,10})?$")
+	protected String ticker;
 
 	@NotBlank
 	@Length(max = 255)
-	protected String request;
+	protected String statement;
 
 	@NotNull
 	@Valid
@@ -63,7 +63,7 @@ public class FineDish extends AbstractEntity {
 	protected Date finishDate;
 	
 	@URL
-	protected String link;
+	protected String hyperlink;
 	
 	protected boolean published;
 	
@@ -72,10 +72,10 @@ public class FineDish extends AbstractEntity {
 	@Valid
 	@NotNull
 	@ManyToOne(optional=false)
-	protected Epicure epicure;
+	protected Learner learner;
 	
 	@Valid
 	@NotNull
 	@ManyToOne(optional=false)
-	protected Chef chef;
+	protected Teacher teacher;
 }
