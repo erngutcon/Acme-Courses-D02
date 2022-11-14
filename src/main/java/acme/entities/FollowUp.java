@@ -40,7 +40,7 @@ public class FollowUp extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
-	protected Date instatiationMoment;
+	protected Date instantiationMoment;
 	
 	@NotBlank
 	@Length(max = 255)
