@@ -25,7 +25,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Chef extends UserRole {
+public class Learner extends UserRole {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -34,15 +34,15 @@ public class Chef extends UserRole {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	@Length(max = 100)
-	protected String			organisation;
+	@Length(max = 75)
+	protected String			school;
 	
 	@NotBlank
 	@Length(max = 255)
-	protected String			assertion;
+	protected String			statement;
 
 	@URL
-	protected String			link;
+	protected String			hyperlink;
 
 	// Derived attributes -----------------------------------------------------
 
