@@ -12,34 +12,34 @@ public class LearnerDashboard implements Serializable {
 
 	private static final long	serialVersionUID	= 1L;
 
-	Integer						totalNumberOfProposedFineDishes;
+	Integer						totalNumberOfProposedHelpRequests;
 
-	Integer						totalNumberOfAcceptedFineDishes;
+	Integer						totalNumberOfAcceptedHelpRequests;
 
-	Integer						totalNumberOfDeniedFineDishes;
+	Integer						totalNumberOfDeniedHelpRequests;
 
-	List<Object>						averageBudgetOfProposedFineDishes;
+	List<Object>						averageBudgetOfProposedHelpRequests;
 
-	List<Object>						deviationBudgetOfProposedFineDishes;
+	List<Object>						deviationBudgetOfProposedHelpRequests;
 
-	List<Object>						minimumBudgetOfProposedFineDishes;
+	List<Object>						minimumBudgetOfProposedHelpRequests;
 
-	List<Object>						maximumBudgetOfProposedFineDishes;
+	List<Object>						maximumBudgetOfProposedHelpRequests;
 
-	List<Object>						averageBudgetOfAcceptedFineDishes;
+	List<Object>						averageBudgetOfAcceptedHelpRequests;
 
-	List<Object>						deviationBudgetOfAcceptedFineDishes;
+	List<Object>						deviationBudgetOfAcceptedHelpRequests;
 
-	List<Object>						minimumBudgetOfAcceptedFineDishes;
+	List<Object>						minimumBudgetOfAcceptedHelpRequests;
 
-	List<Object>						maximumBudgetOfAcceptedFineDishes;
+	List<Object>						maximumBudgetOfAcceptedHelpRequests;
 
-	List<Object>						averageBudgetOfDeniedFineDishes;
+	List<Object>						averageBudgetOfDeniedHelpRequests;
 
-	List<Object>						deviationBudgetOfDeniedFineDishes;
+	List<Object>						deviationBudgetOfDeniedHelpRequests;
 
-	List<Object>						minimumBudgetOfDeniedFineDishes;
+	List<Object>						minimumBudgetOfDeniedHelpRequests;
 
-	List<Object>						maximumBudgetOfDeniedFineDishes;
+	List<Object>						maximumBudgetOfDeniedHelpRequests;
 
 }
