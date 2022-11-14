@@ -30,6 +30,7 @@ public class TheoryTutorial extends AbstractEntity {
 	@Length(max = 75)
 	protected String			title;
 
+	@NotBlank
 	@Column(unique = true)
 	@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(:[A-Z]{1,10})?$")
 	protected String			ticker;

@@ -27,6 +27,7 @@ public class Course extends AbstractEntity {
 
 		// Attributes -------------------------------------------------------------
 
+		@NotBlank
 		@Column(unique = true)
 		@Pattern(regexp = "^[A-Z]{3}-[0-9]{3}(:[A-Z]{1,10})?$") 
 		protected String ticker;
