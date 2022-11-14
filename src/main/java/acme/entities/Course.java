@@ -12,14 +12,14 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.AbstractEntity;
-import acme.roles.Chef;
+import acme.roles.Teacher;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Recipe extends AbstractEntity {
+public class Course extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -53,5 +53,5 @@ public class Recipe extends AbstractEntity {
 		@NotNull
 		@Valid
 		@ManyToOne(optional = false)
-		protected Chef chef;
+		protected Teacher teacher;
 }
