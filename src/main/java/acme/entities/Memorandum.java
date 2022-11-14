@@ -56,5 +56,5 @@ public class Memorandum extends AbstractEntity {
 	@NotNull
 	@Valid
 	@ManyToOne(optional=false)
-	protected FineDish fineDish;
+	protected HelpRequest fineDish;
 }
