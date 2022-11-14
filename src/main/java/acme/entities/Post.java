@@ -31,7 +31,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Bulletin extends AbstractEntity {
+public class Post extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -42,21 +42,21 @@ public class Bulletin extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
-	protected Date					creationMoment;
+	protected Date					instantiationMoment;
 	
 	@NotBlank
-	@Length(max = 100)
-	protected String				heading;
+	@Length(max = 75)
+	protected String				caption;
 
 	@NotBlank
 	@Length(max = 255)
-	protected String				pieceText;
+	protected String				message;
 	
 	@NotNull
 	protected Boolean				flag;
 
 	@URL
-	protected String			link;
+	protected String				hyperlink;
 
 	// Derived attributes -----------------------------------------------------
 
